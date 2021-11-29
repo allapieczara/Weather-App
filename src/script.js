@@ -50,7 +50,7 @@ currentButton.addEventListener("click", geolocator);
 function showTemperatureCity(response) {
   let city = response.data.name;
   let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
+
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = temperature;
   let cityChange = document.querySelector("#current-city");
