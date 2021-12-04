@@ -51,16 +51,6 @@ footer {
   width: 200px;
 }
 
-.fas.xl {
-  color: rgb(75, 85, 88);
-  font-size: 150px;
-}
-
-.fas.sm {
-  font-size: 30px;
-  color: rgb(75, 85, 88);
-}
-
 .precipitation {
   margin-block-end: 0px;
 }
