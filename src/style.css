@@ -1,6 +1,9 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 body {
-  background: linear-gradient(264deg, #e3fdf5 0%, #ffe6fa 100%);
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,7 +25,7 @@ p {
 
 footer {
   font-size: 12px;
-  margin-left: 10px;
+  text-align: center;
 }
 
 .btn {
@@ -32,14 +35,16 @@ footer {
   margin-top: 30px;
 }
 
-.card {
-  max-width: 30rem;
-  margin: 0 auto;
-  margin-top: 30px;
-  border-radius: 40px;
+.app-wrapper {
+  margin: 30px auto;
+  max-width: 700px;
 }
-.navbar {
-  display: unset;
+
+.app-body {
+  padding: 20px;
+  border: 1px solid #3737ee;
+  border-radius: 40px;
+  background: #fff;
 }
 
 .sunny-day {

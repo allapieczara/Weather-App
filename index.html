@@ -24,92 +24,98 @@
     ></script>
   </head>
   <body>
-    <div class="card border-secondary">
-      <header class="card-header">
-        <form id="search-form" class="d-flex">
-          <input
-            placeholder="Type your city in here"
-            class="form-control me-3"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="city-search"
-          />
-          <button class="btn btn-primary end-0" type="submit">Search</button>
-          <button class="btn btn-success end-0" id="current-btn" type="button">
-            Current
-          </button>
-        </form>
-      </header>
-      <main>
-        <div class="container">
-          <h1 id="current-city">Tokyo</h1>
-          <div class="row">
-            <div class="col">
-              <!--<i class="fas fa-cloud-sun xl"></i>--><img
-                class="sunny-day"
-                src="src/icons/day.svg"
-                alt="sunny day icon"
-              />
+    <!--<div class="card border-primary"></div>-->
+    <div class="app-wrapper">
+      <div class="app-body">
+        <header>
+          <form id="search-form" class="d-flex">
+            <input
+              placeholder="Type your city in here"
+              class="form-control rounded"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="city-search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+            <button
+              class="btn btn-outline-success"
+              id="current-btn"
+              type="button"
+            >
+              Current
+            </button>
+          </form>
+        </header>
+        <main>
+          <div class="container">
+            <h1 id="current-city">Tokyo</h1>
+            <div class="row">
+              <div class="col">
+                <!--<i class="fas fa-cloud-sun xl"></i>--><img
+                  class="sunny-day"
+                  src="src/icons/day.svg"
+                  alt="sunny day icon"
+                />
+              </div>
+              <div class="col" id="weather-info">
+                <p id="today-date">Today</p>
+                <p class="precipitation">Precipitation: 58%</p>
+                <p>Wind: 0Km/h</p>
+                <strong
+                  ><h3 class="display-2 fw-bolder" id="current-temp">
+                    16
+                  </h3></strong
+                >
+                <h3 id="celcius">°C</h3>
+                <h3>|</h3>
+                <h3 id="fahrenheit">°F</h3>
+              </div>
             </div>
-            <div class="col" id="weather-info">
-              <p id="today-date">Today</p>
-              <p class="precipitation">Precipitation: 58%</p>
-              <p>Wind: 0Km/h</p>
-              <strong
-                ><h3 class="display-2 fw-bolder" id="current-temp">
-                  16
-                </h3></strong
-              >
-              <h3 id="celcius">°C</h3>
-              <h3>|</h3>
-              <h3 id="fahrenheit">°F</h3>
+            <br />
+            <div class="week-days">
+              <div class="row">
+                <div class="col">16°C</div>
+                <div class="col">16°C</div>
+                <div class="col">16°C</div>
+                <div class="col">16°C</div>
+                <div class="col">16°C</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img src="src/icons/day.svg" alt="sunny day icon" />
+                </div>
+                <div class="col">
+                  <img src="src/icons/day.svg" alt="sunny day icon" />
+                </div>
+                <div class="col">
+                  <img src="src/icons/day.svg" alt="sunny day icon" />
+                </div>
+                <div class="col">
+                  <img src="src/icons/day.svg" alt="sunny day icon" />
+                </div>
+                <div class="col">
+                  <img src="src/icons/day.svg" alt="sunny day icon" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">Friday</div>
+                <div class="col">Saturday</div>
+                <div class="col">Sunday</div>
+                <div class="col">Monday</div>
+                <div class="col">Tuesday</div>
+              </div>
             </div>
           </div>
-          <br />
-          <div class="week-days">
-            <div class="row">
-              <div class="col">16°C</div>
-              <div class="col">16°C</div>
-              <div class="col">16°C</div>
-              <div class="col">16°C</div>
-              <div class="col">16°C</div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <img src="src/icons/day.svg" alt="sunny day icon" />
-              </div>
-              <div class="col">
-                <img src="src/icons/day.svg" alt="sunny day icon" />
-              </div>
-              <div class="col">
-                <img src="src/icons/day.svg" alt="sunny day icon" />
-              </div>
-              <div class="col">
-                <img src="src/icons/day.svg" alt="sunny day icon" />
-              </div>
-              <div class="col">
-                <img src="src/icons/day.svg" alt="sunny day icon" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">Friday</div>
-              <div class="col">Saturday</div>
-              <div class="col">Sunday</div>
-              <div class="col">Monday</div>
-              <div class="col">Tuesday</div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <footer>
-          <a href="https://github.com/allapieczara/Weather-App"
-            >Open-source code</a
-          >
-          by Alla pieczara
-        </footer>
-      </main>
+        </main>
+      </div>
     </div>
+    <footer>
+      <a href="https://github.com/allapieczara/Weather-App">Open-source code</a>
+      by Alla pieczara
+    </footer>
     <script src="src/script.js"></script>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
